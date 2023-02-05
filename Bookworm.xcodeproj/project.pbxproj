@@ -11,6 +11,12 @@
 		35177662298FE2BD00E2A0B7 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35177661298FE2BD00E2A0B7 /* ContentView.swift */; };
 		35177664298FE2BE00E2A0B7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 35177663298FE2BE00E2A0B7 /* Assets.xcassets */; };
 		35177667298FE2BE00E2A0B7 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 35177666298FE2BE00E2A0B7 /* Preview Assets.xcassets */; };
+		3517766F298FE2F000E2A0B7 /* Bookworm.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 3517766D298FE2F000E2A0B7 /* Bookworm.xcdatamodeld */; };
+		35177671298FE72F00E2A0B7 /* DataController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35177670298FE72F00E2A0B7 /* DataController.swift */; };
+		35177676298FE96300E2A0B7 /* AddBookView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35177675298FE96300E2A0B7 /* AddBookView.swift */; };
+		35177678298FF88E00E2A0B7 /* RatingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35177677298FF88E00E2A0B7 /* RatingView.swift */; };
+		3517767C298FFC8C00E2A0B7 /* EmojiRatingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3517767B298FFC8C00E2A0B7 /* EmojiRatingView.swift */; };
+		3517767F2990055B00E2A0B7 /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3517767E2990055B00E2A0B7 /* DetailView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +25,12 @@
 		35177661298FE2BD00E2A0B7 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		35177663298FE2BE00E2A0B7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		35177666298FE2BE00E2A0B7 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		3517766E298FE2F000E2A0B7 /* Bookworm.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Bookworm.xcdatamodel; sourceTree = "<group>"; };
+		35177670298FE72F00E2A0B7 /* DataController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataController.swift; sourceTree = "<group>"; };
+		35177675298FE96300E2A0B7 /* AddBookView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddBookView.swift; sourceTree = "<group>"; };
+		35177677298FF88E00E2A0B7 /* RatingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RatingView.swift; sourceTree = "<group>"; };
+		3517767B298FFC8C00E2A0B7 /* EmojiRatingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmojiRatingView.swift; sourceTree = "<group>"; };
+		3517767E2990055B00E2A0B7 /* DetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,10 +63,13 @@
 		3517765E298FE2BD00E2A0B7 /* Bookworm */ = {
 			isa = PBXGroup;
 			children = (
-				3517765F298FE2BD00E2A0B7 /* BookwormApp.swift */,
-				35177661298FE2BD00E2A0B7 /* ContentView.swift */,
+				3517767D2990053200E2A0B7 /* Components */,
+				35177673298FE78000E2A0B7 /* Views */,
+				35177672298FE76E00E2A0B7 /* Controllers */,
+				35177674298FE78700E2A0B7 /* App */,
 				35177663298FE2BE00E2A0B7 /* Assets.xcassets */,
 				35177665298FE2BE00E2A0B7 /* Preview Content */,
+				3517766D298FE2F000E2A0B7 /* Bookworm.xcdatamodeld */,
 			);
 			path = Bookworm;
 			sourceTree = "<group>";
@@ -65,6 +80,41 @@
 				35177666298FE2BE00E2A0B7 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		35177672298FE76E00E2A0B7 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				35177670298FE72F00E2A0B7 /* DataController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		35177673298FE78000E2A0B7 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				35177661298FE2BD00E2A0B7 /* ContentView.swift */,
+				35177675298FE96300E2A0B7 /* AddBookView.swift */,
+				3517767E2990055B00E2A0B7 /* DetailView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		35177674298FE78700E2A0B7 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				3517765F298FE2BD00E2A0B7 /* BookwormApp.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		3517767D2990053200E2A0B7 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				3517767B298FFC8C00E2A0B7 /* EmojiRatingView.swift */,
+				35177677298FF88E00E2A0B7 /* RatingView.swift */,
+			);
+			path = Components;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,7 +188,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				35177662298FE2BD00E2A0B7 /* ContentView.swift in Sources */,
+				3517767F2990055B00E2A0B7 /* DetailView.swift in Sources */,
+				35177671298FE72F00E2A0B7 /* DataController.swift in Sources */,
+				3517767C298FFC8C00E2A0B7 /* EmojiRatingView.swift in Sources */,
+				3517766F298FE2F000E2A0B7 /* Bookworm.xcdatamodeld in Sources */,
+				35177678298FF88E00E2A0B7 /* RatingView.swift in Sources */,
 				35177660298FE2BD00E2A0B7 /* BookwormApp.swift in Sources */,
+				35177676298FE96300E2A0B7 /* AddBookView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -339,6 +395,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		3517766D298FE2F000E2A0B7 /* Bookworm.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				3517766E298FE2F000E2A0B7 /* Bookworm.xcdatamodel */,
+			);
+			currentVersion = 3517766E298FE2F000E2A0B7 /* Bookworm.xcdatamodel */;
+			path = Bookworm.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 35177654298FE2BD00E2A0B7 /* Project object */;
 }
